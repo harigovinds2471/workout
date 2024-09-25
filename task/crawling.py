@@ -1,7 +1,7 @@
 import requests
 from parsel import Selector
 
-class WebCrawl:
+class WebCrawlnew:
     def __init__(self):
         self.base_url = "https://www.mytheresa.com"
         self.start_url = "https://www.mytheresa.com/euro/en/men/shoes"
@@ -36,6 +36,7 @@ class WebCrawl:
                 file.write(url + "\n")
 
 if __name__ == "__main__":
-    crawler = WebCrawl()
+    crawler = WebCrawlnew()
     crawler.fetch()
     crawler.save_product_urls()
+
